@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://mongoUser:Password1@ds335648.mlab.com:35648/heroku_07011jl4");
 
 // Start the API server
 app.listen(PORT, function() {
